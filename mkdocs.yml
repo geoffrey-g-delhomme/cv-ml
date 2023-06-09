@@ -1,0 +1,72 @@
+site_name: Deep Learning for Computer Vision
+
+nav:
+  - Home: index.md
+  - Datasets:
+      - LARD: datasets/lard.ipynb
+  - Components:
+      - Single:
+          - Deformable Convolutions: components/unitary/dcn.ipynb
+      - Assembly:
+          - FPN: components/assembly/fpn.ipynb
+  - Architectures:
+      - PP-YOLO: architecture/pp-yolo.ipynb
+  - Tricks:
+      - DropBlock: tricks/dropblock.ipynb
+      - EMA: tricks/ema.ipynb
+      - Matrix NMS: tricks/matrix_nms.ipynb
+
+theme:
+  name: material
+  features:
+    - content.code.annotate
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  include_search_page: false
+  search_index_only: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: dark blue
+      accent: light blue
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: light blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+
+repo_name: cv-ml
+repo_url: https://github.com/geoffrey-g-delhomme/cv-ml
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      ignore_h1_titles: True
+
+markdown_extensions:
+  - footnotes
+  - extra
+  - admonition
+  - pymdownx.arithmatex
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - codehilite
+  - def_list
+  - toc:
+      permalink: true
+      toc_depth: 1-3
+  - attr_list
+  - md_in_html
