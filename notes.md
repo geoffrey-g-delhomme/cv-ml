@@ -6,4 +6,8 @@ PP-YOLO
 SOLOV2
 
 # Memo
-DO NOT FORGET TO CREATE COMPONENTS NOTEBOOKS
+
+# Sticky Notes
+
+[Cross-Entropy, Negative Log-Likelihood, and All That Jazz](https://towardsdatascience.com/cross-entropy-negative-log-likelihood-and-all-that-jazz-47a95bd2e81)
+
